@@ -16,6 +16,7 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css"
         integrity="sha512-/k658G6UsCvbkGRB3vPXpsPHgWeduJwiWGPCGS14IQw3xpr63AEMdA8nMYG2gmYkXitQxDTn6iiK/2fD4T87qA=="
@@ -76,211 +77,229 @@
         <!-- About Start -->
 
         <!-- Menu Start -->
-        <div class="container-xxl py-5" id="menu">
+        <div class="container-xxl py-5" id="menu" style="position: relative;">
             <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
-                    <h1 class="mb-5">Our Popular Items</h1>
-                </div>
-                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
-                        <li class="nav-item mb-3">
-                            <a class="d-flex align-items-center text-start mx-3 m-0 pb-0 active" data-bs-toggle="pill" href="#rice">
-                                <i class="mdi mdi-food-turkey fa-2x text-primary"></i>
-                                <div class="ps-3">
-                                    <h6 class="mt-n1 mb-0">Rice</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item mb-3">
-                            <a class="d-flex align-items-center text-start mx-3" data-bs-toggle="pill" href="#pasta">
-                                <i class="mdi mdi-pasta fa-2x text-primary"></i>
-                                <div class="ps-3">
-                                    <h6 class="mt-n1 mb-0">Pasta</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item mb-3">
-                            <a class="d-flex align-items-center text-start mx-3 me-0" data-bs-toggle="pill" href="#soups">
-                                <i class="mdi mdi-rice fa-2x text-primary"></i>
-                                <div class="ps-3">
-                                    <h6 class="mt-n1 mb-0">Soups</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item mb-3">
-                            <a class="d-flex align-items-center text-start mx-3 me-0" data-bs-toggle="pill" href="#proteins">
-                                <i class="mdi mdi-food fa-2x text-primary"></i>
-                                <div class="ps-3">
-                                    <h6 class="mt-n1 mb-0">Proteins</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item mb-3">
-                            <a class="d-flex align-items-center text-start mx-3 me-0" data-bs-toggle="pill" href="#drinks">
-                                <i class="mdi mdi-bottle-wine fa-2x text-primary"></i>
-                                <div class="ps-3">
-                                    <h6 class="mt-n1 mb-0">Drinks</h6>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="rice" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/jollof.png" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Jollof Rice</span>
-                                                <span class="text-primary">&#8358;4,000.00</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/asun-jollof.png" alt="" style="width: 80px;height: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Asun Rice</span>
-                                                <span class="text-primary">&#8358;5,500.00</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="pasta" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/pasta.png" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Pasta</span>
-                                                <span class="text-primary">&#8358;6,000.00</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="soups" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/catfish-pepper-soup.png" alt="" style="width: 80px;height:80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Pepper Soup (Full cat-fish)</span>
-                                                <span class="text-primary">&#8358;12,000.00</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/goat-pepper-soup.png" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Goat Meat Pepper Soup</span>
-                                                <span class="text-primary">&#8358;5,000.00</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/egusi-pando.png" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Egusi and Pando</span>
-                                                <span class="text-primary">&#8358;7,000.00</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div id="proteins" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/pp-chicken.png" alt=""
-                                            style="width: 80px;height:80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Peppered Chicken</span>
-                                                <span class="text-primary">&#8358;4,500.00</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/pp-turkey.png" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Peppered Turkey</span>
-                                                <span class="text-primary">&#8358;5,000.00</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                            </div>
-                        </div>
-                        <div id="drinks" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/cocktail.png" alt=""
-                                            style="width: 80px;height:80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Cocktail</span>
-                                                <span class="text-primary">&#8358;5,500.00</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/zobo.png" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Zobo(25cl)</span>
-                                                <span class="text-primary">&#8358;500.00</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/tiger-nut.png" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Tiger nut drink(25cl)</span>
-                                                <span class="text-primary">&#8358;800.00</span>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                            </div>
-                        </div>
+                <div class="">
+                    <div class="text-center" style="overflow: hidden;">
+                        <img src="img/bg-christ.png" height="120px" />
                     </div>
-                </div>
-            </div>
+                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+                        <h1 style="z-index: 10!important;" class="mb-5">Our Popular Items</h1>
+                        </div>
+                    <div class="tab-class text-center wow fadeInUp" style="z-index: 10!important;" data-wow-delay="0.1s">
+                        <ul style="z-index: 10!important;" class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                            <li class="nav-item mb-3">
+                                <a class="d-flex align-items-center text-start mx-3 m-0 pb-0 active" data-bs-toggle="pill" href="#rice">
+                                    <i class="mdi mdi-food-turkey fa-2x text-primary"></i>
+                                    <div class="ps-3">
+                                        <h6 class="mt-n1 mb-0">Rice</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="d-flex align-items-center text-start mx-3" data-bs-toggle="pill" href="#pasta">
+                                    <i class="mdi mdi-pasta fa-2x text-primary"></i>
+                                    <div class="ps-3">
+                                        <h6 class="mt-n1 mb-0">Pasta</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="d-flex align-items-center text-start mx-3 me-0" data-bs-toggle="pill" href="#soups">
+                                    <i class="mdi mdi-rice fa-2x text-primary"></i>
+                                    <div class="ps-3">
+                                        <h6 class="mt-n1 mb-0">Soups</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="d-flex align-items-center text-start mx-3 me-0" data-bs-toggle="pill" href="#proteins">
+                                    <i class="mdi mdi-food fa-2x text-primary"></i>
+                                    <div class="ps-3">
+                                        <h6 class="mt-n1 mb-0">Proteins</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="d-flex align-items-center text-start mx-3 me-0" data-bs-toggle="pill" href="#drinks">
+                                    <i class="mdi mdi-bottle-wine fa-2x text-primary"></i>
+                                    <div class="ps-3">
+                                        <h6 class="mt-n1 mb-0">Drinks</h6>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="rice" class="tab-pane fade show p-0 active">
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/jollof.png" alt="" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Jollof Rice</span>
+                                                    <span class="text-primary">&#8358;4,000.00</span>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/asun-jollof.png" alt="" style="width: 80px;height: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Asun Rice</span>
+                                                    <span class="text-primary">&#8358;5,500.00</span>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div id="pasta" class="tab-pane fade show p-0">
+                                        <div class="row g-4">
+                                            <div class="col-lg-6">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="flex-shrink-0 img-fluid rounded" src="img/pasta.png" alt="" style="width: 80px;">
+                                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                            <span>Pasta</span>
+                                                            <span class="text-primary">&#8358;6,000.00</span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="soups" class="tab-pane fade show p-0">
+                                        <div class="row g-4">
+                                            <div class="col-lg-6">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="flex-shrink-0 img-fluid rounded" src="img/catfish-pepper-soup.png" alt="" style="width: 80px;height:80px;">
+                                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                            <span>Pepper Soup (Full cat-fish)</span>
+                                                            <span class="text-primary">&#8358;12,000.00</span>
+                                                        </h5>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/goat-pepper-soup.png" alt="" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Goat Meat Pepper Soup</span>
+                                                    <span class="text-primary">&#8358;5,000.00</span>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/egusi-pando.png" alt="" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Egusi and Pando</span>
+                                                    <span class="text-primary">&#8358;7,000.00</span>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    </div>
+                                    </div>
+                                    <div id="proteins" class="tab-pane fade show p-0">
+                                        <div class="row g-4">
+                                            <div class="col-lg-6">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="flex-shrink-0 img-fluid rounded" src="img/pp-chicken.png" alt=""
+                                                        style="width: 80px;height:80px;">
+                                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                            <span>Peppered Chicken</span>
+                                                            <span class="text-primary">&#8358;4,500.00</span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="col-lg-6">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="flex-shrink-0 img-fluid rounded" src="img/pp-turkey.png" alt="" style="width: 80px;">
+                                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                            <span>Peppered Turkey</span>
+                                                            <span class="text-primary">&#8358;5,000.00</span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                    </div>
+                                    <div id="drinks" class="tab-pane fade show p-0">
+                                        <div class="row g-4">
+                                            <div class="col-lg-6">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="flex-shrink-0 img-fluid rounded" src="img/cocktail.png" alt=""
+                                                        style="width: 80px;height:80px;">
+                                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                            <span>Cocktail</span>
+                                                            <span class="text-primary">&#8358;5,500.00</span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="col-lg-6">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="flex-shrink-0 img-fluid rounded" src="img/zobo.png" alt="" style="width: 80px;">
+                                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                            <span>Zobo(25cl)</span>
+                                                            <span class="text-primary">&#8358;500.00</span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/tiger-nut.png" alt="" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Tiger nut drink(25cl)</span>
+                                                    <span class="text-primary">&#8358;800.00</span>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div id="hearts-alpaca" class="hearts">
+                                    <div class="heart"></div>
+                                    <div class="heart"></div>
+                                    <div class="heart"></div>
+                                    <div class="heart"></div>
+                                    <div class="heart"></div>
+                                    <div class="heart"></div>
+                                    <div class="heart"></div>
+                                    <div class="heart"></div>
+                                    <div class="heart"></div>
+                                    <div class="heart"></div>
+                                    <div class="heart"></div>
+                                    <div class="heart"></div>
+                                </div>
         </div>
         <!-- Menu End -->
 
